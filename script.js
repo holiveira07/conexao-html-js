@@ -1,38 +1,50 @@
 const post02 = document.getElementById("post02");
- console.log(post02)
+  console.log(post02)
 
 const formulario = document.getElementById("formulario");
- console.log(formulario)
+  console.log(formulario)
 
 const posts = document.getElementById("posts");
- console.log(posts)
+  console.log(posts)
 
 const postData = document.getElementsByClassName ("post-data");
- console.log(postData)
+  console.log(postData)
 
- const texto0 = document.getElementsByTagName("p")[2];
- console.log(texto0.textContent)
+ const texto01 = document.querySelector("#post01 .post-texto");
+   console.log(texto01)
 
-const texto1 = document.getElementsByTagName("p")[5];
- console.log(texto1.textContent)
+ const texto02 = document.querySelector("#post02 .post-texto");
+  console.log(texto02)
 
-let linkNotexto = document.getElementById("linknotexto");
- console.log(linkNotexto.innerText)
+const linkNotexto = document.getElementById("linknotexto");
+  console.log(linkNotexto.innerText)
 
 const palavra = document.getElementById ("palavra1");
- console.log(palavra.textContent)
+  console.log(palavra.textContent)
 
 const nomeform = document.getElementsByTagName("h2");
- console.log(nomeform[1].innerText)
+  console.log(nomeform[1].innerText)
 
 const linksredes = document.querySelector("aside");
- console.log(linksredes.innerHTML)
+  console.log(linksredes)
 
-var navegação = document.getElementById("links_nav");
-  console.log(navegação.innerText)
+const linksNavs = document.getElementById("links_nav");
+   console.log(linksNavs.innerText)
 
-  var autoresdatas = document.querySelectorAll("p");
+const autoresdatas = document.querySelectorAll("p");
    console.log(autoresdatas [0].textContent)
    console.log(autoresdatas [1].innerText)
    console.log(autoresdatas [3].textContent)
    console.log(autoresdatas [4].textContent)
+
+ let listasResdesFooter = document.querySelectorAll("footer .lista_redes li");
+   console.log(listasResdesFooter)
+
+
+   function percorrerArray(lista){
+  for ( let i = 0; i < lista.length; i++){
+     console.log(lista[i]);
+  }
+  }
+  percorrerArray(postData);
+ 
